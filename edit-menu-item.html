@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <header>truYum<img src="images/truYum.png">
+        <nav>
+            <a href="menu-item-list-admin.html" class="a2">Menu</a>
+        </nav>
+    </header>
+    <body>
+        <form class="editmenu">
+            <table class="Tablecus">
+                <div id="caption">Edit Menu Item</div>
+                <tr>
+                    <td>Name</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="title" placeholder="Title is required" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price (Rs.)</td>
+                    <td>Active</td>
+                    <td>Date of Launch</td>
+                    <td>Category</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="cusprice" name="price" placeholder="Price is required" required></td>
+                    <td>
+                    <input type="radio" name="inStock" class="radio">Yes 
+                    <input type="radio" name="inStock" class="radio">No
+                    </td>
+                    <td>
+                        <input type="text" name="dateOfLaunch" placeholder="Date of Launch is required" required>
+                    </td>
+                    <td>
+                        <select type="dropdownlist" name="category" placeholder="Select one category" required>
+                            <option>Starters</option>
+                            <option>Main Course</option>
+                            <option>Dessert</option>
+                            <option>Drinks</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="checkbox" name="freeDelivery">Free Delivery
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="button" onclick="link()" value="Save">Save</button></a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    <footer>
+        Copyright &copy 2019
+    </footer>
+</html>
